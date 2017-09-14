@@ -1,7 +1,7 @@
-// ConsoleApplication2.cpp: ¶¨Òå¿ØÖÆÌ¨Ó¦ÓÃ³ÌĞòµÄÈë¿Úµã¡£
+// ConsoleApplication2.cpp: å®šä¹‰æ§åˆ¶å°åº”ç”¨ç¨‹åºçš„å…¥å£ç‚¹ã€‚
 //
 
-#include "stdafx.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -16,7 +16,7 @@ int main()
 	char flag;
 	int left, right;
 	float result1,result2;
-	printf("ÇëÊäÈëÒª³öµÄÌâÄ¿ÊıÁ¿\n");
+	printf("è¯·è¾“å…¥è¦å‡ºçš„é¢˜ç›®æ•°é‡\n");
 	scanf_s("%d", &n);
 	srand(unsigned(time(NULL)));
 	while (x<n)
@@ -43,33 +43,23 @@ int main()
 			result1 = (float)left / right;
 			break;
 		}
-		printf_s("ÇëÊäÈë´ğ°¸£º");
+		printf_s("è¯·è¾“å…¥ç­”æ¡ˆï¼š");
 		scanf_s("%f",&result2);
 		if (fabs(result1 - result2)<=1e-6)
 		{
-			printf_s("¼ÆËãÕıÈ·\n");
+			printf_s("è®¡ç®—æ­£ç¡®\n");
 		}
 		else
 		{
-			printf_s("¼ÆËã´íÎó\n");
+			printf_s("è®¡ç®—é”™è¯¯\n");
 		}
 
 
 		i++;
 		while (i >= n)
 		{
-			printf("Ò»¹² %d Ìâ\n", i);
-			printf("¼ÌĞø?[Y/N]\n");
-			fflush(stdin);
-			scanf_s("%c", &flag);
-			if (flag == 'Y' || flag == 'y')
-			{
-				printf("ÇëÊäÈëÒª³öµÄÌâÄ¿ÊıÁ¿\n");
-				scanf_s("%d", &n);
-				i = 0;
-				break;
-			}
-			printf("Ğ»Ğ»Ê¹ÓÃ£¡\n");
+			
+			printf("è°¢è°¢ä½¿ç”¨ï¼\n");
 			fflush(stdin);
 			getchar();
 			return 0;
